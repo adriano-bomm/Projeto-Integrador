@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(245, 245, 245);
+    
+}
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 98vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: violet;
+}
+.navbar{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    letter-spacing: 0,5px;
+    padding: 0 10px;
+
+}
+.navbar:after{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar:hover{
+    color:white;
+
+}
+.navbar:hover:after{
+    width: 100px;
+
+
+}
+.logo{
+    text-decoration: none;
+    display: flex;
+}
+.logo:hover{
+    color: white;
+    transition: 0.3s;
+}
+#foto {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 83px;
+    height: 500px;
+    width: 98vw;
+}
+.texto{
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    width: 66vw;
+    margin: 15%;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+#sub2{
+    margin-top: 3rem;
+}
+
+#f1{
+    width: 540px;
+    height: 400px;
+}
+#f2{
+    width: 540px;
+    height: 400px;
+}
+#f3{
+    width: 540px;
+    height: 400px;
+}
+
+.carrosel{
+    width: 540px;
+    height: 400px;
+    overflow: hidden;
+    margin: 50px auto;
+    
+}
+.carrosel ul{
+    display: flex;
+    list-style: none;
+    width: 1620px;
+    height: 400px;
+
+}
+.carrosel li{
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+@keyframes slide {
+    0%{left: -40px}
+    20%{left: -40px}    
+    30%{left: -580px}
+    50%{left: -580px}
+    60%{left: -1120px}
+    90%{left: -1120px}
+    100%{left: 0px}
+}
+

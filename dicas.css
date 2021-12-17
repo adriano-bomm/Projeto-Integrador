@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: violet;
+}
+.navbar{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    letter-spacing: 0,5px;
+    padding: 0 10px;
+
+}
+.navbar:after{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar:hover{
+    color:white;
+
+}
+.navbar:hover:after{
+    width: 100px;
+
+
+}
+#logo{
+    text-decoration: none;
+    display: flex;
+}
+.logo:hover{
+    color: white;
+    transition: 0.3s;
+}
+#foto {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 83px;
+    height: 500px;
+    width: 99vw;
+}
